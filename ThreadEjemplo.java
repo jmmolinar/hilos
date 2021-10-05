@@ -13,6 +13,10 @@ public class ThreadEjemplo extends Thread {
         new ThreadEjemplo("Pepe").start();
         new ThreadEjemplo("Juan").start();
         new ThreadEjemplo("Miguel").start();
+        //
+        ThreadEjemplo otro = new ThreadEjemplo("Carlos");
+        otro.start();
+
         System.out.println("Termina thread main");
     }
 }
